@@ -1,0 +1,84 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Shared/Scripts/GameWorld/GameWorld.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 561.791, 19.5414 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 544.527, 22.1049 )
+
+[node name="GameWorld" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TopCollider" type="StaticBody2D" parent="."]
+position = Vector2( 462.64, 19.5482 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopCollider"]
+position = Vector2( 0.950012, -37.0501 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 475.79, 569.474 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 4.10779, 51.6843 )
+shape = SubResource( 2 )
+
+[node name="ScoreLabel1" type="Label" parent="."]
+margin_left = 217.452
+margin_top = 5.62265
+margin_right = 334.452
+margin_bottom = 34.6227
+align = 1
+valign = 1
+
+[node name="ScoreLabel2" type="Label" parent="."]
+margin_left = 659.262
+margin_top = 7.47737
+margin_right = 765.262
+margin_bottom = 36.4774
+align = 1
+valign = 1
+
+[node name="Score1" type="Label" parent="."]
+margin_left = 330.887
+margin_top = 8.0
+margin_right = 370.887
+margin_bottom = 33.0
+align = 1
+valign = 1
+
+[node name="Score2" type="Label" parent="."]
+margin_left = 761.864
+margin_top = 9.06133
+margin_right = 801.864
+margin_bottom = 34.0613
+align = 1
+valign = 1
+
+[node name="GameStartLabel" type="Label" parent="."]
+margin_left = 327.0
+margin_top = 159.0
+margin_right = 433.0
+margin_bottom = 214.0
+text = "Game Starts In: "
+align = 1
+valign = 1
+
+[node name="NextPointLabel" type="Label" parent="."]
+visible = false
+margin_left = 298.698
+margin_top = 159.0
+margin_right = 430.698
+margin_bottom = 214.0
+text = "Next Point Starts In: "
+align = 1
+valign = 1
+
+[node name="TimerLabel" type="Label" parent="."]
+margin_left = 433.811
+margin_top = 179.264
+margin_right = 473.811
+margin_bottom = 193.264
+

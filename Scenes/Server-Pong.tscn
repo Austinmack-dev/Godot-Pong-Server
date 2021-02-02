@@ -1,0 +1,22 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="connectionStatus" type="Label" parent="."]
+margin_left = 233.0
+margin_top = 117.0
+margin_right = 673.0
+margin_bottom = 170.0
+
+[node name="numClientsLabel" type="Label" parent="."]
+margin_left = 418.0
+margin_top = 28.0
+margin_right = 531.0
+margin_bottom = 59.0
+
+[node name="serverLabel" type="Label" parent="."]
+margin_left = 254.0
+margin_top = 401.0
+margin_right = 706.0
+margin_bottom = 518.0
+

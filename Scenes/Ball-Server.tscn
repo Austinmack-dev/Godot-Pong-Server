@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Shared/Scenes/Ball/Ball.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Ball/BallMovement.gd" type="Script" id=2]
+
+[node name="Ball" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
